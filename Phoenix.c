@@ -18,19 +18,18 @@ int main()
 	char hi[254000];
 	FILE *in;
 	
-	system("D:\\学习\\c语言大作业1\\字符动画\\涅槃.mp4");
-	Sleep(3000);
+	system(".\\Phoenix.wav");
 	
-	for(i=1;i<=2080;i++)
+	for(i=1;i<=832;i++)
 	{
 		sprintf(FileName,
-		"D:\\学习\\c语言大作业1\\字符动画\\涅槃字符\\(%ld).txt",i);
+		".\\Phoenixtxt\\1 (%ld).txt",i);
 		in = fopen(FileName,"r");
 		assert(in !=NULL);
 		fread(hi, 1, 254000,in);
 		printf("%s\n%d",hi,i);
 		gotoxy(1,1);
-		Sleep(99);
+		Sleep(249);
 		fclose(in);
 	}
 }
